@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Vivek Trivedi - Portfolio</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="stylesheet"
@@ -47,7 +47,11 @@
       <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
-          <img src="your-image.jpg" alt="Vivek Trivedi" class="profile-pic" />
+          <img
+            src="./assets/images/ProfileImage.jpg"
+            alt="Vivek Trivedi"
+            class="profile-pic"
+          />
           <p>
             I'm a .NET Core Full Stack Developer with 1.5 years of experience in
             building robust web applications. My expertise includes working with
@@ -81,7 +85,44 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 Vivek Trivedi. All rights reserved.</p>
     </footer>
+
+    <script>
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-on-scroll");
+            observer.unobserve(entry.target); // Only animate once
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections except hero
+      document.querySelectorAll("section:not(#home)").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Observe all project cards
+      document.querySelectorAll(".project-card").forEach((card) => {
+        observer.observe(card);
+      });
+
+      // Add alternating slide animations to about content
+      const aboutContent = document.querySelector(".about-content");
+      if (aboutContent) {
+        const profilePic = aboutContent.querySelector(".profile-pic");
+        const aboutText = aboutContent.querySelector("p");
+
+        if (profilePic) profilePic.classList.add("slide-in-left");
+        if (aboutText) aboutText.classList.add("slide-in-right");
+      }
+    </script>
   </body>
 </html>
