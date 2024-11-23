@@ -1,128 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vivek Trivedi - Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home" class="hero">
-        <h1>Vivek Trivedi</h1>
-        <p class="subtitle">.NET Core Full Stack Developer</p>
-        <div class="social-links">
-          <a
-            href="https://github.com/vivektrivedivk"
-            target="_blank"
-            class="social-icon"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="#" target="_blank" class="social-icon">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Trivedi - Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </section>
+    </nav>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <img
-            src="./assets/images/ProfileImage.jpg"
-            alt="Vivek Trivedi"
-            class="profile-pic"
-          />
-          <p>
-            I'm a .NET Core Full Stack Developer with 1.5 years of experience in
-            building robust web applications. My expertise includes working with
-            ASP.NET Core, C#, and modern web technologies to create efficient
-            and scalable solutions.
-          </p>
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="floating-sphere"></div>
+        <div class="cube"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Vivek Trivedi</h1>
+                    <h2 class="h3 mb-4">Software Developer</h2>
+                    <p class="lead mb-4">Results-driven Software developer with a love of coding and a strong foundation in software development concepts.</p>
+                    <a href="#contact" class="btn btn-custom">Get In Touch</a>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <img src="project1.jpg" alt="Project 1" />
-            <h3>Project Title</h3>
-            <p>Project description goes here</p>
-          </div>
-          <!-- Add more project cards as needed -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">About Me</h2>
+            <div class="row align-items-center">
+                <!-- Profile Column -->
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="about-profile text-center">
+                        <div class="profile-img-wrapper mb-4">
+                            <!-- Add your profile image here -->
+                            <img src="assets/images/profile.jpg" alt="Vivek Trivedi" class="profile-img">
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/yourusername" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/yourusername" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="mailto:vktrivedi540@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Info Column -->
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-content">
+                        <p class="lead mb-4">Demonstrated capacity to work with cross-functional teams to ensure the success of projects. Competent in designing scalable, efficient solutions and analysing user demands. Devoted to improving technical abilities on a constant basis and contributing to creative ideas.</p>
+                        
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3 class="mb-0">Experience</h3>
+                                <div class="experience-line"></div>
+                            </div>
+                            
+                            <div class="experience-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="company-name">Software Developer at Overseas IT Solution</h4>
+                                    <span class="experience-date">July 2023 - Present</span>
+                                </div>
+                                <p class="location mb-3">📍 Ahmedabad, Gujarat</p>
+                                <ul class="experience-list">
+                                    <li>Demonstrated strong problem-solving abilities by addressing complex technical challenges</li>
+                                    <li>Utilized .NET Core and C# for effective API development</li>
+                                    <li>Enhanced user engagement through JavaScript and jQuery</li>
+                                    <li>Played a key role in prioritizing and organizing tasks within project timelines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
+    <section id="projects" class="py-5 section-alternate">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="project-card">
+                        <h3>Cattle Management Portal</h3>
+                        <p>(.NET Core MVC, Clean Architecture, SAAS Based Web App)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <h3>Employee & Admin Portal</h3>
+                        <p>(Blazor, .NET Web API)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <h3>Church Management System</h3>
+                        <p>(Angular.js, .NET Web API)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-      <p>&copy; 2024 Vivek Trivedi. All rights reserved.</p>
-    </footer>
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Technical Skills</h2>
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <div class="skill-tag">API Development</div>
+                    <div class="skill-tag">.NET Core/.NET 5+</div>
+                    <div class="skill-tag">C# Language</div>
+                    <div class="skill-tag">Clean Architecture Design</div>
+                    <div class="skill-tag">.NET Blazor</div>
+                    <div class="skill-tag">Entity Framework Core</div>
+                    <div class="skill-tag">SQL Server</div>
+                    <div class="skill-tag">jQuery</div>
+                    <div class="skill-tag">JavaScript/TypeScript</div>
+                    <div class="skill-tag">Unity Testing (XUnit)</div>
+                    <div class="skill-tag">Deployment</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-      const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      };
+    <section id="contact" class="py-5 section-alternate">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <form class="contact-form">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info mt-4">
+                        <h3>Get in Touch</h3>
+                        <p>📍 Ahmedabad, Gujarat</p>
+                        <p>📧 vktrivedi540@gmail.com</p>
+                        <p>📱 +91-9825722821</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-on-scroll");
-            observer.unobserve(entry.target); // Only animate once
-          }
-        });
-      }, observerOptions);
-
-      // Observe all sections except hero
-      document.querySelectorAll("section:not(#home)").forEach((section) => {
-        observer.observe(section);
-      });
-
-      // Observe all project cards
-      document.querySelectorAll(".project-card").forEach((card) => {
-        observer.observe(card);
-      });
-
-      // Add alternating slide animations to about content
-      const aboutContent = document.querySelector(".about-content");
-      if (aboutContent) {
-        const profilePic = aboutContent.querySelector(".profile-pic");
-        const aboutText = aboutContent.querySelector("p");
-
-        if (profilePic) profilePic.classList.add("slide-in-left");
-        if (aboutText) aboutText.classList.add("slide-in-right");
-      }
-    </script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/site.js"></script>
+</body>
 </html>
